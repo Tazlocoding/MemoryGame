@@ -10,14 +10,18 @@
 <body>
   <header>
     <h1>Memory game</h1>
-    <select name="games" id="selectGame">
+    <select class="select__game" name="games" id="selectGame">
       <option value="">Games</option>
       <option value="game1">Niveau 1</option>
       <option value="game2">Niveau 2</option>
     </select>
   </header>
   <main>
-    <section>
+     
+    <div id="gameOne">
+    <h2>Jeux Niveaux 1</h2>
+    <section class="game">
+      <div class="games__container">
       <div id="case1" class="game__figurine"><img src="img/emo1.png" alt="emo1"></div>
       <div id="case2" class="game__figurine"><img src="img/emo3.png" alt="emo3"></div>
       <div id="case3" class="game__figurine"><img src="img/emo4.png" alt="emo4"></div>
@@ -34,9 +38,13 @@
       <div id="case14" class="game__figurine"><img src="img/emo9.png" alt="emo9"></div>
       <div id="case15" class="game__figurine"><img src="img/emo8.png" alt="emo8"></div>
       <div id="case16" class="game__figurine"><img src="img/emo7.png" alt="emo7"></div>
+    </div>
     </section>
+  </div>
+  <img class="accueil" src="img/WorldMap.svg" alt="">
   </main>
   <footer>
+    <p>&copy; Laurent Daucé &copy;</p>
   </footer>
 </body>
 </html>
