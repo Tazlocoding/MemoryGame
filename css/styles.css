@@ -5,6 +5,8 @@
 }
 body {
   background-color: grey;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 header {
@@ -40,20 +42,21 @@ header .select__game {
   display: none;
   position: absolute;
   z-index: 2;
-  transform: translateX(50%);
+  margin-left: 50vh;
+  
 }
 
 #gameOne h2 {
   color: white;
   text-align: center;
-  margin-top: 0.5vh;
+  margin-top: 1vh;
 }
 
 .game {
-  width: 1000px;
-  height:700px;
-  background-color: white;
-  margin: 5vh auto 0 auto;
+  width: 80vh;
+  height:70vh;
+  background-color: rgba(255,255,255,0.6);
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,24 +64,26 @@ header .select__game {
 }
 
 .games__container {
-display: flex;
-flex-wrap: wrap;
-width: 500px;
-height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 60vh;
+  height: 60vh;
 }
 
 .game__figurine {
   background-color: aqua;
-  margin: 10px;
-  width: 100px;
-  height: 120px;
+  margin: 1vh;
+  width: 12vh;
+  height: 12vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .games__container img {
-  width: 90px;
+  display: none;
+  width: 9vh;
 }
 
 footer {
@@ -86,7 +91,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 3vh;
-  width: 100%;
+  width: 1200px;
   background-color: aliceblue;
   margin-top: 2vh;
   position: absolute;
