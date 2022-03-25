@@ -4,7 +4,25 @@ $(document).ready(function() {
       $("#gameOne").css('display', 'block');
     });
   });
- 
+//Recupérer les images pour les mettre dans un tableau
+  $('.game__figurine').map(function() {
+    return $(this.images).val();
+    
+  })
+  .get().join(",");
+
+  console.log(this.images);
+  //Récupére un HTMLCollection
+  //Faire une boucle pour lire le tableau et afficher les cartes avec un click
+  $('.game__figurine').each(function(){ 
+     $(this).click(function() {
+       let index = $(this);
+       $( index).show();
+     })
+       
+  
+    })
+ /*  
   $('#case1').click(function() {
     $('.img1').show(500);
   })
@@ -12,7 +30,7 @@ $(document).ready(function() {
     $('.img2').show();
   })
   $('#case3').click(function() {
-    $('.img3').show();
+    $('.img3').show();                                                                                                                                                                                                                     
   })
   $('#case4').click(function() {
     $('.img4').show();
@@ -52,5 +70,5 @@ $(document).ready(function() {
   })
   $('#case16').click(function() {
     $('.img16').show();
-  })
+  }) */
 })
