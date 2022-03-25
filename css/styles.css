@@ -5,7 +5,7 @@
 }
 body {
   background-color: grey;
-  max-width: 1200px;
+  max-width: 140vh;
   margin: 0 auto;
 }
 
@@ -42,8 +42,7 @@ header .select__game {
   display: none;
   position: absolute;
   z-index: 2;
-  margin-left: 50vh;
-  
+  margin-left: 30vh;
 }
 
 #gameOne h2 {
@@ -91,7 +90,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 3vh;
-  width: 1200px;
+  width: 140vh;
   background-color: aliceblue;
   margin-top: 2vh;
   position: absolute;
